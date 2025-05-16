@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Community Nest Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">CNM</a>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="index.html" class="border-indigo-500 text-gray-900 dark:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                        Home
+                    </a>
+                    <a href="listings.html" class="border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                        Listings
+                    </a>
+                    <a href="tenant-dashboard.html" class="border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                        Tenant Dashboard
+                    </a>
+                    <a href="landlord-dashboard.html" class="border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                        Landlord Dashboard
+                    </a>
+                    <a href="admin-dashboard.html" class="border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                        Admin Dashboard
+                    </a>
+                    <a href="login.html" class="border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                        Login
+                    </a>
+                    <a href="register.html" class="border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                        Register
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        <!-- Welcome Section -->
+        <div class="px-4 py-6 sm:px-0">
+            <div class="border-4 border-dashed border-gray-200 dark:border-gray-700 rounded-lg p-4">
+                <h1 class="text-2xl font-semibold text-gray-900 dark:text-white">Admin Dashboard</h1>
+                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">System overview and management tools</p>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="mt-8">
+            <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- Total Users -->
+                <div class="bg-white dark:bg-gray-800 overflow-hidden shadow rounded-lg">
+                    <div class="p-5">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-users text-indigo-500 text-2xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900 dark:text-white">Total Users</h3>
+                                <p class="text-2xl font-semibold text-gray-900 dark:text-white">1,234</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Active Listings -->
+                <div class="bg-white dark:bg-gray-800 overflow-hidden shadow rounded-lg">
+                    <div class="p-5">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-home text-green-500 text-2xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900 dark:text-white">Active Listings</h3>
+                                <p class="text-2xl font-semibold text-gray-900 dark:text-white">456</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pending Approvals -->
+                <div class="bg-white dark:bg-gray-800 overflow-hidden shadow rounded-lg">
+                    <div class="p-5">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-clock text-yellow-500 text-2xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900 dark:text-white">Pending Approvals</h3>
+                                <p class="text-2xl font-semibold text-gray-900 dark:text-white">23</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Revenue -->
+                <div class="bg-white dark:bg-gray-800 overflow-hidden shadow rounded-lg">
+                    <div class="p-5">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-dollar-sign text-blue-500 text-2xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900 dark:text-white">Monthly Revenue</h3>
+                                <p class="text-2xl font-semibold text-gray-900 dark:text-white">$45,678</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Management Sections -->
+        <div class="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-2">
+            <!-- Recent Users -->
+            <div class="bg-white dark:bg-gray-800 shadow rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-white">Recent Users</h3>
+                        <button class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            View All
+                        </button>
+                    </div>
+                    <div class="mt-5">
+                        <div class="flow-root">
+                            <ul class="-mb-8">
+                                <li>
+                                    <div class="relative pb-8">
+                                        <div class="relative flex space-x-3">
+                                            <div class="min-w-0 flex-1">
+                                                <div class="flex items-center justify-between">
+                                                    <p class="text-sm font-medium text-gray-900 dark:text-white">Sarah Johnson</p>
+                                                    <span class="text-sm text-gray-500 dark:text-gray-400">Tenant</span>
+                                                </div>
+                                                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Joined 2 days ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="relative pb-8">
+                                        <div class="relative flex space-x-3">
+                                            <div class="min-w-0 flex-1">
+                                                <div class="flex items-center justify-between">
+                                                    <p class="text-sm font-medium text-gray-900 dark:text-white">Michael Chen</p>
+                                                    <span class="text-sm text-gray-500 dark:text-gray-400">Landlord</span>
+                                                </div>
+                                                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Joined 3 days ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Listings -->
+            <div class="bg-white dark:bg-gray-800 shadow rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-white">Recent Listings</h3>
+                        <button class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            View All
+                        </button>
+                    </div>
+                    <div class="mt-5">
+                        <div class="flow-root">
+                            <ul class="-mb-8">
+                                <li>
+                                    <div class="relative pb-8">
+                                        <div class="relative flex space-x-3">
+                                            <div class="min-w-0 flex-1">
+                                                <div class="flex items-center justify-between">
+                                                    <p class="text-sm font-medium text-gray-900 dark:text-white">123 Faith Street</p>
+                                                    <span class="text-sm text-gray-500 dark:text-gray-400">$1,200/mo</span>
+                                                </div>
+                                                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Christian Community • Posted 1 day ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="relative pb-8">
+                                        <div class="relative flex space-x-3">
+                                            <div class="min-w-0 flex-1">
+                                                <div class="flex items-center justify-between">
+                                                    <p class="text-sm font-medium text-gray-900 dark:text-white">456 Peace Avenue</p>
+                                                    <span class="text-sm text-gray-500 dark:text-gray-400">$1,500/mo</span>
+                                                </div>
+                                                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Muslim Community • Posted 2 days ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- System Status -->
+        <div class="mt-8">
+            <div class="bg-white dark:bg-gray-800 shadow rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-white">System Status</h3>
+                    <div class="mt-5">
+                        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                            <div class="bg-gray-50 dark:bg-gray-700 overflow-hidden shadow rounded-lg">
+                                <div class="p-5">
+                                    <div class="flex items-center">
+                                        <div class="flex-shrink-0">
+                                            <i class="fas fa-server text-green-500 text-2xl"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <h3 class="text-lg font-medium text-gray-900 dark:text-white">Server Status</h3>
+                                            <p class="text-sm text-gray-500 dark:text-gray-400">All systems operational</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 dark:bg-gray-700 overflow-hidden shadow rounded-lg">
+                                <div class="p-5">
+                                    <div class="flex items-center">
+                                        <div class="flex-shrink-0">
+                                            <i class="fas fa-database text-blue-500 text-2xl"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <h3 class="text-lg font-medium text-gray-900 dark:text-white">Database</h3>
+                                            <p class="text-sm text-gray-500 dark:text-gray-400">Running normally</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 dark:bg-gray-700 overflow-hidden shadow rounded-lg">
+                                <div class="p-5">
+                                    <div class="flex items-center">
+                                        <div class="flex-shrink-0">
+                                            <i class="fas fa-shield-alt text-yellow-500 text-2xl"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <h3 class="text-lg font-medium text-gray-900 dark:text-white">Security</h3>
+                                            <p class="text-sm text-gray-500 dark:text-gray-400">No threats detected</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html> 
